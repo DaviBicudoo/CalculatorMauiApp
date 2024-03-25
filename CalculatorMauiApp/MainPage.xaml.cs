@@ -106,6 +106,26 @@
         {
 
         }
+
+        private void Sen_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cos_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tg_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SquareRoot_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

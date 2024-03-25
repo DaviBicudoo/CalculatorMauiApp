@@ -25,51 +25,60 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <Grid RowDefinitions="150, *, *, *, *, *, *" RowSpacing="10" ColumnSpacing="10" Margin="10" 
+        <Grid RowDefinitions="150, *, *, *, *, *, *, *" RowSpacing="10" ColumnSpacing="10" Margin="10" 
               ColumnDefinitions="*, *, *, *">
             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="Display" Text="123" 
                    HorizontalTextAlignment="End" TextColor="White" FontSize="60" />
-            <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Clean" 
+            <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Sen" 
+                    Text="Sen" Clicked="Sen_Clicked"/>
+            <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="Cos" 
+                    Text="Cos" Clicked="Cos_Clicked" />
+            <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Tg"
+                    Text="Tg" Clicked="Tg_Clicked"/>
+            <Button Grid.Row="1" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="SquareRoot"
+                    Text="√" Clicked="SquareRoot_Clicked"/>
+
+            <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Clean" 
                     Text="C" Clicked="Clean_Clicked"/>
-            <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="MoreLess" 
+            <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="MoreLess" 
                     Text="+/-" Clicked="MoreLess_Clicked" />
-            <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Percentage"
+            <Button Grid.Row="2" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Percentage"
                     Text="%" Clicked="Percentage_Clicked"/>
-            <Button Grid.Row="1" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Divide"
+            <Button Grid.Row="2" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Divide"
                     Text="/" Clicked="Divide_Clicked" />
 
-            <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Number7"
+            <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Number7"
                     Text="7" Clicked="Number7_Clicked" />
-            <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="Number8"
+            <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="Number8"
                     Text="8" Clicked="Number8_Clicked" />
-            <Button Grid.Row="2" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Number9"
+            <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Number9"
                     Text="9" Clicked="Number9_Clicked" />
-            <Button Grid.Row="2" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Multiply"
+            <Button Grid.Row="3" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Multiply"
                     Text="X" Clicked="Multiply_Clicked" />
 
-            <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Number4"
+            <Button Grid.Row="4" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Number4"
                     Text="4" Clicked="Number4_Clicked" />
-            <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="Number5"
+            <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="Number5"
                     Text="5" Clicked="Number5_Clicked" />
-            <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Number6"
+            <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Number6"
                     Text="6" Clicked="Number6_Clicked" />
-            <Button Grid.Row="3" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Subtract"
+            <Button Grid.Row="4" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Subtract"
                     Text="-" Clicked="Subtract_Clicked" />
 
-            <Button Grid.Row="4" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Number1"
+            <Button Grid.Row="5" Grid.Column="0" Style="{StaticResource DarkButton}" x:Name="Number1"
                     Text="1" Clicked="Number1_Clicked" />
-            <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="Number2"
+            <Button Grid.Row="5" Grid.Column="1" Style="{StaticResource DarkButton}" x:Name="Number2"
                     Text="2" Clicked="Number2_Clicked" />
-            <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Number3"
+            <Button Grid.Row="5" Grid.Column="2" Style="{StaticResource DarkButton}" x:Name="Number3"
                     Text="3" Clicked="Number3_Clicked" />
-            <Button Grid.Row="4" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Sum"
+            <Button Grid.Row="5" Grid.Column="3" Style="{StaticResource PurpleButton}" x:Name="Sum"
                     Text="+" Clicked="Sum_Clicked" />
 
-            <Button Grid.Row="5" Grid.Column="0" Style="{StaticResource LightButton}" x:Name="Number0"
+            <Button Grid.Row="6" Grid.Column="0" Style="{StaticResource LightButton}" x:Name="Number0"
                     Text="0" Clicked="Number0_Clicked"/>
-            <Button Grid.Row="5" Grid.Column="1" Style="{StaticResource LightButton}" x:Name="Dot"
+            <Button Grid.Row="6" Grid.Column="1" Style="{StaticResource LightButton}" x:Name="Dot"
                     Text="." Clicked="Dot_Clicked" />
-            <Button Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource PurpleButton}"
+            <Button Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource PurpleButton}"
                     x:Name="Equals" Text="=" Clicked="Equals_Clicked" />
         </Grid>
     </ContentPage.Content>
